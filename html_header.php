@@ -6,13 +6,12 @@
         $('#socialshareprivacy').socialSharePrivacy({
           services : {
             facebook : {
-              'perma_option' : 'off'
+              'perma_option' : 'on'
             }, 
             twitter : {
-              'status' : 'off'
+              'status' : 'on'
             },
             gplus : {
-              'dummy_img' : '../../core/backend/admin/modules/share_buttons/socialshareprivacy/images/dummy_gplus.png'
             }
           },
           "css_path"  : "../../core/backend/admin/modules/share_buttons/socialshareprivacy/socialshareprivacy.css",

@@ -1,1 +1,1 @@
-<div id="socialshareprivacy">test</div>
+<div id="socialshareprivacy"></div>
