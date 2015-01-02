@@ -48,7 +48,7 @@
             title += ' - ' + creator;
         } else {
             title = $('title').text();
-            document.write(test);
+            document.write("test");
         }
 
         return encodeURIComponent(title);
