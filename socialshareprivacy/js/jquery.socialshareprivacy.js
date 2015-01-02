@@ -176,7 +176,7 @@
             $.when(
                 loadLangFile())
             .then( function() {
-                $(iteration).prepend('<ul class="social_share_privacy_area clearfix">TEST</ul>');
+                $(iteration).prepend('<ul class="social_share_privacy_area clearfix"></ul>');
                 var context = $('.social_share_privacy_area', iteration);
 
                 // Class for dark skinning
@@ -311,7 +311,7 @@
                 //
                 // Der Info/Settings-Bereich wird eingebunden
                 //
-                context.append('<li class="settings_info ' + options.perma_orientation + '"><div class="settings_info_menu off perma_option_off"><a href="' + options.info_link + '"><span class="help_info icon"><span class="info">' + language.txt_help + '</span></span></a></div></li>');
+                context.append('<li class="settings_info ' + options.perma_orientation + '">test<div class="settings_info_menu off perma_option_off"><a href="' + options.info_link + '"><span class="help_info icon"><span class="info">' + language.txt_help + '</span></span></a></div></li>');
 
                 // Info-Overlays mit leichter Verzoegerung einblenden
                 $(context).on('mouseenter', '.help_info:not(.info_off)', function () {
