@@ -24,5 +24,6 @@
         }
         i++;
       }
+      alert(divs);
     });
   </script>
