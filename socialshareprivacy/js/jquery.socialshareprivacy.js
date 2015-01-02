@@ -150,7 +150,7 @@
             }
 
             $(window).data('socialshareprivacy_css','1');
-            $.innerHTML = "test";
+            $('#socialshareprivacy').innerHTML = "test";
         }
 
         var language;

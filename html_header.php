@@ -4,7 +4,7 @@
     jQuery(document).ready(function($){
       var divs = $(".container div#socialshareprivacy").length;
       var i = 1
-      while (i < divs){
+      //while (i < divs){
         if($('#socialshareprivacy').length > 0){
           $('#socialshareprivacy').socialSharePrivacy({
             services : {
@@ -23,6 +23,6 @@
           });
         }
         i++;
-      }
+      //}
     });
   </script>
