@@ -6,7 +6,7 @@
       var i = 1
       //while (i < divs){
         if($('#socialshareprivacy').length > 0){
-          $("#socialshareprivacy").each(function(){
+          $('div#socialshareprivacy').each(function(){
             $('#socialshareprivacy').socialSharePrivacy({
               services : {
                 facebook : {
