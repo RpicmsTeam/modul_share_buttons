@@ -286,7 +286,7 @@
                     var gplus_uri = uri + options.services.gplus.referrer_track;
                     
                     // we use the Google+ "asynchronous" code, standard code is flaky if inserted into dom after load
-                    var gplus_code = 'test<div class="g-plusone" data-size="' + options.services.gplus.size + '" data-href="' + gplus_uri + '"></div><script type="text/javascript">window.___gcfg = {lang: "' + language.services.gplus.language + '"}; (function() { var po = document.createElement("script"); po.type = "text/javascript"; po.async = true; po.src = "https://apis.google.com/js/platform.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s); })(); </script>';
+                    var gplus_code = '<div class="g-plusone" data-size="' + options.services.gplus.size + '" data-href="' + gplus_uri + '"></div><script type="text/javascript">window.___gcfg = {lang: "' + language.services.gplus.language + '"}; (function() { var po = document.createElement("script"); po.type = "text/javascript"; po.async = true; po.src = "https://apis.google.com/js/platform.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s); })(); </script>';
                     var gplus_dummy_btn = '<img src="' + options.services.gplus.dummy_img + '" alt="&quot;Google+1&quot;-Dummy" class="gplus_one_dummy" />';
 
                     context.append('<li class="gplus help_info clearfix"><span class="info">' + language.services.gplus.txt_info + '</span><a href="#" class="switch off">' + language.services.gplus.txt_gplus_off + '</a><div class="gplusone dummy_btn">' + gplus_dummy_btn + '</div></li>');
