@@ -7,9 +7,6 @@
               services : {
                 facebook : {
                   'perma_option' : 'on'
-                }, 
-                twitter : {
-                  'status' : 'on'
                 },
                 gplus : {
                 }

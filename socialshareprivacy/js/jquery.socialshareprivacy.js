@@ -170,15 +170,13 @@
             return d.promise();
         }
 
-        return this.each(function () {
+        $('div#socialshareprivacy').each(function(){return this.each(function () {
             var iteration = this;
 
             $.when(
                 loadLangFile())
             .then( function() {
-                $('#socialshareprivacy').each(function(){
-                        $(iteration).prepend('<ul class="social_share_privacy_area clearfix"></ul>');
-                    });
+                $(iteration).prepend('<ul class="social_share_privacy_area clearfix"></ul>');
                 var context = $('.social_share_privacy_area', iteration);
 
                 // Class for dark skinning
@@ -441,5 +439,6 @@
                 }
             }); // .then()
         }); // this.each(function ()
+    });
     }; // $.fn.socialSharePrivacy = function (settings) {
 }(jQuery));
