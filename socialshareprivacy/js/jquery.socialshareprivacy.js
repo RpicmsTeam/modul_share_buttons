@@ -154,7 +154,7 @@
 
         var language;
 
-        function loadLangFile() {
+        $('div#socialshareprivacy').each(function(){function loadLangFile() {
             var d = $.Deferred();
 
             $.getJSON(options.lang_path + options.language+'.lang', function(data) {
@@ -170,7 +170,7 @@
             return d.promise();
         }
 
-        $('div#socialshareprivacy').each(function(){return this.each(function () {
+        return this.each(function () {
             var iteration = this;
 
             $.when(
@@ -439,6 +439,6 @@
                 }
             }); // .then()
         }); // this.each(function ()
-    });
     }; // $.fn.socialSharePrivacy = function (settings) {
+    });
 }(jQuery));
