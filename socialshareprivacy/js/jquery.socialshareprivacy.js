@@ -230,7 +230,7 @@
                         if ($container_fb.find('.switch').hasClass('off')) {
                             $container_fb.addClass('info_off');
                             $container_fb.find('.switch').addClass('on').removeClass('off').html(language.services.facebook.txt_fb_on);
-                            $container_fb.find('img.fb_like_privacy_dummy').replaceAll(fb_code);
+                            $container_fb.find('img.fb_like_privacy_dummy').replaceWith(fb_code);
                         }
                         else {
                             $container_fb.removeClass('info_off');
@@ -268,7 +268,7 @@
                         if ($container_tw.find('.switch').hasClass('off')) {
                             $container_tw.addClass('info_off');
                             $container_tw.find('.switch').addClass('on').removeClass('off').html(language.services.twitter.txt_twitter_on);
-                            $container_tw.find('img.tweet_this_dummy').replaceAll(twitter_code);
+                            $container_tw.find('img.tweet_this_dummy').replaceWith(twitter_code);
                         }
                         else {
                             $container_tw.removeClass('info_off');
@@ -298,7 +298,7 @@
                         if ($container_gplus.find('.switch').hasClass('off')) {
                             $container_gplus.addClass('info_off');
                             $container_gplus.find('.switch').addClass('on').removeClass('off').html(language.services.gplus.txt_gplus_on);
-                            $container_gplus.find('img.gplus_one_dummy').replaceAll(gplus_code);
+                            $container_gplus.find('img.gplus_one_dummy').replaceWith(gplus_code);
                         }
                         else {
                             $container_gplus.removeClass('info_off');
