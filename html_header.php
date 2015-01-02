@@ -6,7 +6,7 @@
       var i = 1
       //while (i < divs){
         if($('#socialshareprivacy').length > 0){
-          $('#socialshareprivacy').socialSharePrivacy({
+          $("#socialshareprivacy").each($('#socialshareprivacy').socialSharePrivacy({
             services : {
               facebook : {
                 'perma_option' : 'on'
@@ -20,7 +20,7 @@
             "css_path"  : "../../core/backend/admin/modules/share_buttons/socialshareprivacy/socialshareprivacy.css",
             "lang_path" : "../../core/backend/admin/modules/share_buttons/socialshareprivacy/lang/",
             "language"  : "de"
-          });
+          }));
         }
         i++;
       //}
