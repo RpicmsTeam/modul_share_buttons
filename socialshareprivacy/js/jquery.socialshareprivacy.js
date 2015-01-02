@@ -150,7 +150,6 @@
             }
 
             $(window).data('socialshareprivacy_css','1');
-            $('#socialshareprivacy').innerHTML = "test";
         }
 
         var language;
@@ -177,6 +176,7 @@
             $.when(
                 loadLangFile())
             .then( function() {
+                $(context).innerHTML = "test";
                 $(iteration).prepend('<ul class="social_share_privacy_area clearfix"></ul>');
                 var context = $('.social_share_privacy_area', iteration);
 
