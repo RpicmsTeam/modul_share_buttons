@@ -177,8 +177,8 @@
                 loadLangFile())
             .then( function() {
                 $('#socialshareprivacy').each(function(){
-                    $(iteration).prepend('<ul class="social_share_privacy_area clearfix"></ul>');
-                    )};
+                        $(iteration).prepend('<ul class="social_share_privacy_area clearfix"></ul>');
+                    };
                 var context = $('.social_share_privacy_area', iteration);
 
                 // Class for dark skinning
