@@ -48,7 +48,6 @@
             title += ' - ' + creator;
         } else {
             title = $('title').text();
-            title = $('title').text("test");
         }
 
         return encodeURIComponent(title);
@@ -177,7 +176,7 @@
             $.when(
                 loadLangFile())
             .then( function() {
-                $(iteration).prepend('<ul class="social_share_privacy_area clearfix"></ul>');
+                $(iteration).prepend('<ul class="social_share_privacy_area clearfix">TEST</ul>');
                 var context = $('.social_share_privacy_area', iteration);
 
                 // Class for dark skinning
