@@ -440,6 +440,6 @@
                     }
                 }); // .then()
             }); // this.each(function ()
-        }; // $.fn.socialSharePrivacy = function (settings) {
-    }(jQuery));
-)};
+        });
+    }; // $.fn.socialSharePrivacy = function (settings) {
+}(jQuery));
