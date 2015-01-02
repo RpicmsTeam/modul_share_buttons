@@ -2,7 +2,8 @@
   <script type="text/javascript" src="../../core/backend/admin/modules/share_buttons/socialshareprivacy/js/jquery.socialshareprivacy.js"></script>
   <script type="text/javascript">
     jQuery(document).ready(function($){
-      var divs = $("#socialshareprivacy div").length
+      var divs = $("#socialshareprivacy div").length;
+      var i = 1
       while (i < divs){
         if($('#socialshareprivacy').length > 0){
           $('#socialshareprivacy').socialSharePrivacy({
