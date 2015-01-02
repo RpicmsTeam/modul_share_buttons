@@ -176,9 +176,9 @@
             $.when(
                 loadLangFile())
             .then( function() {
-                $(context).innerHTML = "test";
                 $(iteration).prepend('<ul class="social_share_privacy_area clearfix"></ul>');
                 var context = $('.social_share_privacy_area', iteration);
+                context.innerHTML = "test";
 
                 // Class for dark skinning
                 if(options.skin == 'dark') {
